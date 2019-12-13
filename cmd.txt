@@ -1,0 +1,27 @@
+* Create a folder named “test-dir”. Create an empty file called “nocontent.txt” inside
+“test-dir” directory. Now add the line “This is VVDN trainee” to “nocontent.txt” file.
+     ANSWER:
+              -tocreate directory:mkdir test-dir
+              -to create txt file: vi nocontent.txt
+              -vi nocontent.txt
+                      -This is VVDN trainee
+* Apply permission to the file “nocontent.txt” which should be accessible by anyone
+accessing the server.
+             -chmod 777 nocontent.txt
+* Determine the size of the “test-dir” folder.
+             -du test-dir
+* Open firefox/chrome from terminal and get the process id.
+             -firefox
+             -pidof firefox
+* Display the memory status in terms on mega bytes.
+             -free -mh
+* Create a file with name “find.txt” and enter the following content “I Love Ubuntu”.
+Now replace Ubuntu with “Centos” without opening file.
+             -vi find.txt
+             -I Love Ubuntu
+             -sed -i 's/Ubuntu/Centos/g'find.txt
+             -cat find.txt
+* Get the ipaddress of the system
+             -ifconfig
+*  To print first column
+             -awf '{print$1}' find.txt
